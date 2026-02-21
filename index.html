@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writing a Strong Argumentative Thesis Statement</title>
+
+<style>
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #1e2a38;
+}
+
+header {
+    background-color: #1b365d;
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.container {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.section {
+    background: white;
+    padding: 35px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #1b365d;
+    border-bottom: 3px solid #d4af37;
+    padding-bottom: 8px;
+}
+
+button {
+    background-color: #1b365d;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #142847;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.feedback {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.correct {
+    background-color: #e6f4ea;
+    color: #0f5132;
+}
+
+.incorrect {
+    background-color: #fdecea;
+    color: #842029;
+}
+
+svg {
+    width: 100%;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+    color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Writing a Strong Argumentative Thesis Statement</h1>
+<p>Interactive Academic Writing Module</p>
+</header>
+
+<div class="container">
+
+<div class="section">
+<h2>Learning Objectives</h2>
+<ul>
+<li>Identify characteristics of a strong argumentative thesis.</li>
+<li>Differentiate between weak and strong thesis statements.</li>
+<li>Revise weak thesis statements into arguable claims.</li>
+<li>Create an original thesis aligned to a prompt.</li>
+</ul>
+<p><strong>Estimated Completion Time:</strong> 35 minutes</p>
+</div>
+
+<div class="section">
+<h2>Anatomy of a Strong Thesis Statement</h2>
+
+<svg viewBox="0 0 800 250" role="img" aria-label="Diagram showing thesis structure including topic, position, and reasoning">
+<rect x="50" y="80" width="200" height="80" fill="#1b365d" rx="8"/>
+<text x="150" y="125" fill="white" text-anchor="middle" font-size="16">Topic</text>
+
+<rect x="300" y="80" width="200" height="80" fill="#2e5984" rx="8"/>
+<text x="400" y="125" fill="white" text-anchor="middle" font-size="16">Clear Position</text>
+
+<rect x="550" y="80" width="200" height="80" fill="#d4af37" rx="8"/>
+<text x="650" y="125" fill="white" text-anchor="middle" font-size="16">Reasoning</text>
+
+<line x1="250" y1="120" x2="300" y2="120" stroke="#333" stroke-width="3"/>
+<line x1="500" y1="120" x2="550" y2="120" stroke="#333" stroke-width="3"/>
+</svg>
+
+<p><strong>Weak Example:</strong> Social media affects teenagers.</p>
+<p><strong>Strong Example:</strong> Excessive social media use increases teen anxiety and reduces in-person social skills.</p>
+
+</div>
+
+<div class="section">
+<h2>Weak vs. Strong Comparison</h2>
+
+<svg viewBox="0 0 800 300" role="img" aria-label="Comparison chart showing characteristics of weak and strong thesis statements">
+<rect x="50" y="50" width="300" height="200" fill="#fdecea" rx="8"/>
+<text x="200" y="80" text-anchor="middle" font-size="18" fill="#842029">Weak Thesis</text>
+<text x="70" y="120" font-size="14">• Too general</text>
+<text x="70" y="150" font-size="14">• No clear argument</text>
+<text x="70" y="180" font-size="14">• Lacks reasoning</text>
+
+<rect x="450" y="50" width="300" height="200" fill="#e6f4ea" rx="8"/>
+<text x="600" y="80" text-anchor="middle" font-size="18" fill="#0f5132">Strong Thesis</text>
+<text x="470" y="120" font-size="14">• Specific topic</text>
+<text x="470" y="150" font-size="14">• Clear position</text>
+<text x="470" y="180" font-size="14">• Includes reasoning</text>
+</svg>
+
+</div>
+
+<div class="section">
+<h2>Formative Assessment 1</h2>
+<p><strong>Which thesis is strongest?</strong></p>
+
+<input type="radio" name="q1" value="a"> School uniforms are used in many schools.<br>
+<input type="radio" name="q1" value="b"> School uniforms are bad.<br>
+<input type="radio" name="q1" value="c"> Mandatory school uniforms improve focus and reduce peer pressure.<br>
+<input type="radio" name="q1" value="d"> Schools have rules.<br>
+
+<button onclick="checkQ1()">Submit</button>
+<div id="feedback1" class="feedback"></div>
+</div>
+
+<div class="section">
+<h2>Formative Assessment 2</h2>
+<p>Is this thesis weak or strong?</p>
+<p><em>College students should sleep more.</em></p>
+
+<input type="radio" name="q2" value="weak"> Weak<br>
+<input type="radio" name="q2" value="strong"> Strong<br>
+
+<button onclick="checkQ2()">Submit</button>
+<div id="feedback2" class="feedback"></div>
+</div>
+
+<div class="section">
+<h2>Formative Assessment 3</h2>
+<p>Revise this weak thesis:</p>
+<p><em>Technology is important in education.</em></p>
+
+<textarea id="revision" rows="4"></textarea>
+<button onclick="showModel()">Submit Revision</button>
+<div id="modelAnswer" class="feedback"></div>
+</div>
+
+<div class="section">
+<h2>Summative Assessment</h2>
+<p><strong>Prompt:</strong> Should community colleges offer free tuition?</p>
+
+<textarea id="finalThesis" rows="4"></textarea>
+<button onclick="submitFinal()">Submit Final Thesis</button>
+<div id="finalFeedback" class="feedback"></div>
+
+<h3>Rubric</h3>
+<ul>
+<li>4 – Clear, specific, arguable, includes reasoning</li>
+<li>3 – Arguable but lacks specificity</li>
+<li>2 – Topic present but weak claim</li>
+<li>1 – No clear argument</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+Academic Writing E-Learning Module | Argumentative Thesis Instruction
+</footer>
+
+<script>
+function checkQ1() {
+let answer = document.querySelector('input[name="q1"]:checked');
+let feedback = document.getElementById("feedback1");
+if (!answer) { feedback.innerHTML = "Please select an answer."; return; }
+if (answer.value === "c") {
+feedback.innerHTML = "Correct. This thesis includes a clear claim and reasoning.";
+feedback.className = "feedback correct";
+} else {
+feedback.innerHTML = "Incorrect. A strong thesis must include a clear position and reasoning.";
+feedback.className = "feedback incorrect";
+}
+}
+
+function checkQ2() {
+let answer = document.querySelector('input[name="q2"]:checked');
+let feedback = document.getElementById("feedback2");
+if (!answer) { feedback.innerHTML = "Please select an answer."; return; }
+if (answer.value === "weak") {
+feedback.innerHTML = "Correct. The statement lacks reasoning and specificity.";
+feedback.className = "feedback correct";
+} else {
+feedback.innerHTML = "Incorrect. The thesis is too general to be strong.";
+feedback.className = "feedback incorrect";
+}
+}
+
+function showModel() {
+let model = document.getElementById("modelAnswer");
+model.innerHTML = "Example revision: Integrating technology into classrooms increases student engagement and expands access to diverse learning resources.";
+model.className = "feedback correct";
+}
+
+function submitFinal() {
+let thesis = document.getElementById("finalThesis").value;
+let feedback = document.getElementById("finalFeedback");
+if (thesis.length < 25) {
+feedback.innerHTML = "Your thesis needs greater specificity and reasoning.";
+feedback.className = "feedback incorrect";
+} else {
+feedback.innerHTML = "Submission received. Review the rubric above to self-assess.";
+feedback.className = "feedback correct";
+}
+}
+</script>
+
+</body>
+</html>
